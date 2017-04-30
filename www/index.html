@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="format-detection" content="telephone=no">
+            <meta name="msapplication-tap-highlight" content="no">
+                <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+                    <link rel="stylesheet" type="text/css" href="css/main.css">
+                        <link rel="stylesheet" type="text/css" href="css/ratchet.css">
+                            <title>Secret Messenger</title>
+    </head>
+    
+    <body>
+        <header class="bar bar-nav">
+            <h1 class="title">Secret Messenger (It's a Secret!)</h1>
+        </header>
+        <div class="content" id="index">
+            <div class="content-padded">
+                <input id="username" type="text" placeholder="username" />
+                <input id="email" type="email" placeholder="email" />
+                <button id="login" class="btn btn-block">
+                    <span class="icon icon-list"></span> Login
+                </button>
+                <button id="register" class="btn btn-block">
+                    <span class="icon icon-person"></span> Register
+                </button>
+                <h3 id="code"></h3>
+            </div>
+        </div>
+        
+        <div id="msglist" class="modal">
+            <header class="bar bar-nav">
+                <a id="msgSend" class="btn btn-link btn-nav pull-right" href="#sendMsg">
+                    Send
+                    <span class="icon icon-share iconplus"></span>
+                </a>
+                <h1 class="title">Message List</h1>
+            </header>
+            <div class="content">
+                <div class="content-padded">
+                    <ul class="table-view" id="message-list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="sendMsg" class="modal">
+            <header class="bar bar-nav">
+                <a id="back" class="btn btn-link btn-nav pull-left">
+                    <span class="icon icon-close iconplus"></span> Back
+                </a>
+                <h1 class="title">Send a Message</h1>
+            </header>
+            <div class="content">
+                <div class="content-padded">
+                    <div id="myimage">
+                        
+                    </div>
+                    <button id="takepicture" class="btn btn-block">
+                        <span class="icon icon-compose"></span> Take a Picture
+                    </button>
+                    <select id="user-list">
+                    </select>
+                    <textarea id="messagetosend" rows="5" cols="30"></textarea>
+                    <button id="send" class="btn btn-block">
+                        <span class="icon icon-share"></span> Send
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="msgDetails" class="modal">
+            <header class="bar bar-nav">
+                <a id="DetailsBack" class="btn btn-link btn-nav pull-left">
+                    <span class="icon icon-close iconplus"></span> Back
+                </a>
+                <h1 class="title">Details of the Message</h1>
+                <a id="DetailsSend" class="btn btn-link btn-nav pull-right">
+                    Send
+                    <span class="icon icon-share iconplus"></span>
+                </a>
+            </header>
+            <div class="content">
+                <div class="content-padded">
+                    <h2 id="msgby">By: </h2>
+                    <div id="picdet"></div>
+                    <p id="recmsg"></p>
+                    <button id="delete" class="btn btn-block">
+                        <span class="icon icon-trash"></span> Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/bits-1.js"></script>
+        <script type="text/javascript" src="js/ratchet.min.js"></script>
+    </body>
+    
+</html>

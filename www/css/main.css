@@ -1,0 +1,52 @@
+body {
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    height: 115vh;
+}
+
+canvas {
+    width: 100%;
+}
+
+#code {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+#login,
+#delete {
+    color: black;
+    margin-top: 1.2rem;
+    background-color: blue;
+}
+
+#msgby {
+    color: black;
+    font-size: 1.7rem;
+}
+
+#recmsg {
+    color: black;
+    font-size: 1.1rem;
+    margin-top: .5rem;
+    text-align: center;
+}
+
+#register,
+#takepicture {
+    background-color: orange;
+    color: black;
+}
+
+#send {
+    background-color: green;
+    color: black;
+    margin-top: 1.2rem;
+}
+
+span.push-right::after {
+    padding: 1rem;
+}
+
